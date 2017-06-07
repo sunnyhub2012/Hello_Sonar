@@ -1,5 +1,2 @@
 #!/bin/bash
-isExistApp = `pgrep httpd`
-if [[ -n  $isExistApp ]]; then
-    service httpd stop        
-fi
+kill -9 $(lsof -i:8888 -t) 2> /dev/null
