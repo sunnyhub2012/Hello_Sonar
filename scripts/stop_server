@@ -1,2 +1,4 @@
 #!/bin/bash
-echo stopping service
+kill -9 $(lsof -i:8888 -t) 2> /dev/null
+sleep 5s
+echo service killed
