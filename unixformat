@@ -1,2 +1,3 @@
-sed -i 's/\r//' scripts/*
-
+sed -i 's/\r//' scripts/install_dependencies
+sed -i 's/\r//' scripts/start_server
+sed -i 's/\r//' scripts/stop_server
