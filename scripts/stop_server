@@ -1,4 +1,4 @@
 #!/bin/bash
 kill -9 $(lsof -i:8888 -t) 2> /dev/null
-sleep 5s
+ps ax|grep 8888
 echo service killed
