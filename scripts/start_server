@@ -1,3 +1,5 @@
 #!/bin/bash
 nohup java -jar /opt/ccp/xservice/test10000-0.0.1-SNAPSHOT.jar </dev/null >/dev/null 2>&1 &
+echo Service Started
+exit 0
 
