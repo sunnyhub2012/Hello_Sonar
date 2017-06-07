@@ -1,0 +1,3 @@
+#!/bin/bash
+echo After Service
+exit 0
