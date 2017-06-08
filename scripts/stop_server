@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ps ax|grep 8888
 echo service killed
 exit 0
