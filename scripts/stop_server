@@ -1,5 +1,4 @@
-#!/bin/bash
-service jenkService stop
+#!/bin/sh
 ps ax|grep 8888
 echo service killed
 exit 0

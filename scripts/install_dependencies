@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 chmod +x /etc/init.d/jenkService
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin
 exit 0
