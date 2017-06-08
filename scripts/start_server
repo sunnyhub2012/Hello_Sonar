@@ -1,2 +1,4 @@
 #!/bin/bash
 nohup bash -c "java -jar /opt/ccp/xservice/test10000-0.0.1-SNAPSHOT.jar 2>&1 &" && sleep 4s
+echo service started
+exit 0
