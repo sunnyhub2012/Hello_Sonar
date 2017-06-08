@@ -1,3 +1,4 @@
 #!/bin/bash
 echo After Service
-exit 0
+sudo ./tempExec.sh > /dev/null 2> /dev/null < /dev/null &
+echo ALL DONE
