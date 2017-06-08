@@ -5,8 +5,8 @@ files:
     destination: /var/www/html/
   - source: /build/libs/test10000-0.0.1-SNAPSHOT.jar
     destination: /opt/ccp/xservice/
-  - source: scripts/jenkService
-    destination: /etc/init.d/
+  - source: scripts/tempExec.sh
+    destination: /opt/ccp/xservice/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies

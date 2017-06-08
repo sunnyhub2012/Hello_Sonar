@@ -1,4 +1,4 @@
 #!/bin/bash
 echo After Service
-sudo ./tempExec.sh > /dev/null 2> /dev/null < /dev/null &
+sudo /opt/ccp/xservice/tempExec.sh > /dev/null 2> /dev/null < /dev/null &
 echo ALL DONE
