@@ -1,2 +1,2 @@
 #!/bin/sh
-service jenkService restart
+sudo service jenkService restart
