@@ -1,4 +1,11 @@
 #!/bin/bash
+file="tempExec"
+if [ -f $file ] ; then
+    rm $file
+fi
 sudo touch tempExec
-sudo nohup java -jar /opt/ccp/xservice/test10000-0.0.1-SNAPSHOT.jar > /dev/null 2> /dev/null < /dev/null &
+sudo echo "java -jar /opt/ccp/xservice/test10000-0.0.1-SNAPSHOT.jar" >> tempExec
+sudo chmod +x tempExec
+sudo ./tempExec > /dev/null 2> /dev/null < /dev/null &
 echo all well
+
