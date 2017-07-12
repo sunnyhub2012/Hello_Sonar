@@ -13,6 +13,8 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'jacoco'
+apply plugin: 'org.sonarqube'
 
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
@@ -25,4 +27,16 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+sonarqube {
+    properties {
+        property "sonar.projectName", "Java :: Simple Project :: SonarQube Scanner for Gradle"
+        property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
+        property "sonar.jacoco.reportPath", "${buildDir}/jacoco/test.exec"
+	property "code coverage", "jacoco"
+    }
+}
+jacoco {
+    toolVersion = "0.7.6.201602180812"
+    reportsDir = file("$buildDir/customJacocoReportDir")
 }
