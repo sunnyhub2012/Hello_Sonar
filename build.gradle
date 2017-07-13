@@ -35,6 +35,7 @@ dependencies {
 sonarqube {
     properties {
         property "sonar.projectName", "Java :: Simple Project :: SonarQube Scanner for Gradle"
+	property "sonar.host.url", "https://localhost:9000/"
         property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
         property "sonar.jacoco.reportPath", "${buildDir}/jacoco/test.exec"
 	property "code coverage", "jacoco"
@@ -43,4 +44,5 @@ sonarqube {
 jacoco {
     toolVersion = "0.7.6.201602180812"
     reportsDir = file("$buildDir/customJacocoReportDir")
+}
 }
