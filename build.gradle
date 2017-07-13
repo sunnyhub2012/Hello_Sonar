@@ -36,6 +36,7 @@ sonarqube {
     properties {
         property "sonar.projectName", "Java :: Simple Project :: SonarQube Scanner for Gradle"
 	property "sonar.host.url", "https://localhost:9000/"
+	property "sonar.login", "38ba0a22998c5d23dd34f25786d6c43890615252"
         property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
         property "sonar.jacoco.reportPath", "${buildDir}/jacoco/test.exec"
 	property "code coverage", "jacoco"
